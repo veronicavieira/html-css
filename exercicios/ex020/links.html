@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Links</title>
+    <style>
+        /*SELETORES PERSONALIZADOS
+        #  =  id
+        .  =  class
+        :  =  pseudo-class
+        :: =  pseudo-element
+        >  =  children (O filho)
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            /*Cor dos links*/
+            text-decoration: none;
+            /*Tira o sublinhado do link*/
+            font-weight: bold;
+            /*Coloca o link em negrito */
+        }
+
+
+
+        a:visited {
+            color: green;
+            /* Cor dos links visitados*/
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+            /*Quando passa o mouse em cima do link fica sublinhado e preto*/
+        }
+
+        a:active {
+            color: yellow;
+            /*Quando clica o mouse em cima do link fica amarelo*/
+        }
+
+        .especial {
+            background-color: palevioletred;
+        }
+
+        .especial::before {
+            content: '⇒ ';
+            /*Seta depois do link*/
+        }
+
+        .especial::after {
+            content: ' ⇒';
+            /*Seta no inicio do link*/
+            text-decoration: normal;
+            font-weight: normal;
+            color: blue;
+            /*A palavra link fica azul*/
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="blank">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" class="especial">Canal do Youtube</a></li>
+        <!--Esse link tá configurado para abrir em uma nova aba-->
+
+        <li><a href="https://www.cursoemvideo.com" class="especial">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+
+</html>

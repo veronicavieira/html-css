@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #CFF7A2, #FFE490)
+        /* Para fazer um degradê*/
+}
+
+main {
+    background-color: white;
+    /* Cor de fundo*/
+    border-radius: 10px;
+    /* Para deixar a ponta da folha mais arredondada*/
+    box-shadow: 5px 5px #9c8c596e;
+    /*Para colocar sombra na folha*/
+    width: 600px;
+    padding: 10px;
+    /* Afastar a margem*/
+    margin: auto;
+    /* para colocar no meio da tela*/
+}
+
+h1 {
+    color: #222E45;
+    /* Cor do título*/
+    text-align: center;
+    /*Para colocar o  titulo no centro*/
+    text-shadow: #090d142b;
+
+    h2 {
+        color: #0048DE;
+    }
+
+    p {
+        text-align: justify;
+        /* Para alinhar o texto*/
+    }
